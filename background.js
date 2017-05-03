@@ -8,12 +8,12 @@ chrome.runtime.onInstalled.addListener(function() {
 
 chrome.omnibox.onInputEntered.addListener(function(text) {
   var url = "http://www.google.com/search?q=" + encodeURI(text) + "&btnI=Im+Feeling+Lucky";
-  navigate(url);
+  navigate(url, {newtab: false});
 });
 
 chrome.contextMenus.onClicked.addListener(function(info) {
   var url = 'http://www.google.com/search?q=' + encodeURI(info.selectionText) +'&btnI=Im+Feeling+Lucky';
-  navigate(url);
+  navigate(url, {newtab: true});
 })
 
 function navigate(url, opts) {

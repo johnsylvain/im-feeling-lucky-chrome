@@ -3,7 +3,7 @@
 
   "name": "I'm Feeling Lucky",
   "description": "Use I'm feeling lucky right from the Omnibox or from highlighted text",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "john.n.sylvain@gmail.com",
 
   "omnibox": {
